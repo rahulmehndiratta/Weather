@@ -10,12 +10,27 @@
 		B741B66D2B01553700418EDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B66C2B01553700418EDA /* AppDelegate.swift */; };
 		B741B66F2B01553700418EDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B66E2B01553700418EDA /* SceneDelegate.swift */; };
 		B741B6712B01553700418EDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6702B01553700418EDA /* ViewController.swift */; };
-		B741B6742B01553700418EDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B741B6722B01553700418EDA /* Main.storyboard */; };
 		B741B6762B01553800418EDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B741B6752B01553800418EDA /* Assets.xcassets */; };
 		B741B6792B01553800418EDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B741B6772B01553800418EDA /* LaunchScreen.storyboard */; };
 		B741B6842B01553900418EDA /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6832B01553900418EDA /* WeatherAppTests.swift */; };
 		B741B68E2B01553900418EDA /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B68D2B01553900418EDA /* WeatherAppUITests.swift */; };
 		B741B6902B01553900418EDA /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B68F2B01553900418EDA /* WeatherAppUITestsLaunchTests.swift */; };
+		B741B6B72B01D4EE00418EDA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6B62B01D4ED00418EDA /* HTTPMethod.swift */; };
+		B741B6BE2B01D7AB00418EDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6BD2B01D7AB00418EDA /* Constants.swift */; };
+		B741B6C02B01DF2600418EDA /* NetworkHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6BF2B01DF2600418EDA /* NetworkHeader.swift */; };
+		B741B6C22B01DF4400418EDA /* NetworkRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6C12B01DF4400418EDA /* NetworkRouter.swift */; };
+		B741B6C42B01DF6100418EDA /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6C32B01DF6100418EDA /* HTTPTask.swift */; };
+		B741B6C62B01DF7400418EDA /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6C52B01DF7400418EDA /* APIRouter.swift */; };
+		B741B6C82B01DFA200418EDA /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6C72B01DFA200418EDA /* EndPointType.swift */; };
+		B741B6CB2B01DFF000418EDA /* WeatherEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6CA2B01DFF000418EDA /* WeatherEndpoint.swift */; };
+		B741B6CD2B01E01700418EDA /* WeatherApiHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6CC2B01E01700418EDA /* WeatherApiHandler.swift */; };
+		B741B6CF2B01E03500418EDA /* RemoteAPIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6CE2B01E03500418EDA /* RemoteAPIResponseHandler.swift */; };
+		B741B6D12B01E05600418EDA /* URLRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6D02B01E05600418EDA /* URLRequestError.swift */; };
+		B741B6D32B01E06F00418EDA /* DefaultRemoteAPIResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6D22B01E06F00418EDA /* DefaultRemoteAPIResponseHandler.swift */; };
+		B741B6D52B01E08800418EDA /* Data+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6D42B01E08800418EDA /* Data+Decode.swift */; };
+		B741B6D82B01E0AE00418EDA /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6D72B01E0AE00418EDA /* ParameterEncoding.swift */; };
+		B741B6DA2B01E0C600418EDA /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6D92B01E0C600418EDA /* URLParameterEncoder.swift */; };
+		B741B6DC2B01E0D900418EDA /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B6DB2B01E0D900418EDA /* JSONParameterEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +55,6 @@
 		B741B66C2B01553700418EDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B741B66E2B01553700418EDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B741B6702B01553700418EDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B741B6732B01553700418EDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B741B6752B01553800418EDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B741B6782B01553800418EDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B741B67A2B01553800418EDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +63,22 @@
 		B741B6892B01553900418EDA /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B741B68D2B01553900418EDA /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		B741B68F2B01553900418EDA /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B741B6B62B01D4ED00418EDA /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		B741B6BD2B01D7AB00418EDA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B741B6BF2B01DF2600418EDA /* NetworkHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHeader.swift; sourceTree = "<group>"; };
+		B741B6C12B01DF4400418EDA /* NetworkRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRouter.swift; sourceTree = "<group>"; };
+		B741B6C32B01DF6100418EDA /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		B741B6C52B01DF7400418EDA /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		B741B6C72B01DFA200418EDA /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		B741B6CA2B01DFF000418EDA /* WeatherEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherEndpoint.swift; sourceTree = "<group>"; };
+		B741B6CC2B01E01700418EDA /* WeatherApiHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApiHandler.swift; sourceTree = "<group>"; };
+		B741B6CE2B01E03500418EDA /* RemoteAPIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPIResponseHandler.swift; sourceTree = "<group>"; };
+		B741B6D02B01E05600418EDA /* URLRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestError.swift; sourceTree = "<group>"; };
+		B741B6D22B01E06F00418EDA /* DefaultRemoteAPIResponseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRemoteAPIResponseHandler.swift; sourceTree = "<group>"; };
+		B741B6D42B01E08800418EDA /* Data+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Decode.swift"; sourceTree = "<group>"; };
+		B741B6D72B01E0AE00418EDA /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		B741B6D92B01E0C600418EDA /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		B741B6DB2B01E0D900418EDA /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +129,10 @@
 		B741B66B2B01553700418EDA /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				B741B66C2B01553700418EDA /* AppDelegate.swift */,
-				B741B66E2B01553700418EDA /* SceneDelegate.swift */,
+				B741B6C92B01DFCE00418EDA /* ApiManager */,
+				B741B6BC2B01D79900418EDA /* Constant */,
+				B741B69C2B015ACF00418EDA /* App Flow */,
 				B741B6702B01553700418EDA /* ViewController.swift */,
-				B741B6722B01553700418EDA /* Main.storyboard */,
 				B741B6752B01553800418EDA /* Assets.xcassets */,
 				B741B6772B01553800418EDA /* LaunchScreen.storyboard */,
 				B741B67A2B01553800418EDA /* Info.plist */,
@@ -125,6 +155,61 @@
 				B741B68F2B01553900418EDA /* WeatherAppUITestsLaunchTests.swift */,
 			);
 			path = WeatherAppUITests;
+			sourceTree = "<group>";
+		};
+		B741B69C2B015ACF00418EDA /* App Flow */ = {
+			isa = PBXGroup;
+			children = (
+				B741B66C2B01553700418EDA /* AppDelegate.swift */,
+				B741B66E2B01553700418EDA /* SceneDelegate.swift */,
+			);
+			path = "App Flow";
+			sourceTree = "<group>";
+		};
+		B741B69D2B01608500418EDA /* NetworkServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				B741B6B62B01D4ED00418EDA /* HTTPMethod.swift */,
+				B741B6BF2B01DF2600418EDA /* NetworkHeader.swift */,
+				B741B6C12B01DF4400418EDA /* NetworkRouter.swift */,
+				B741B6C32B01DF6100418EDA /* HTTPTask.swift */,
+				B741B6C52B01DF7400418EDA /* APIRouter.swift */,
+				B741B6C72B01DFA200418EDA /* EndPointType.swift */,
+			);
+			path = NetworkServiceLayer;
+			sourceTree = "<group>";
+		};
+		B741B6BC2B01D79900418EDA /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				B741B6BD2B01D7AB00418EDA /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		B741B6C92B01DFCE00418EDA /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				B741B6D62B01E0A300418EDA /* DataHandler */,
+				B741B69D2B01608500418EDA /* NetworkServiceLayer */,
+				B741B6CA2B01DFF000418EDA /* WeatherEndpoint.swift */,
+				B741B6CC2B01E01700418EDA /* WeatherApiHandler.swift */,
+				B741B6CE2B01E03500418EDA /* RemoteAPIResponseHandler.swift */,
+				B741B6D02B01E05600418EDA /* URLRequestError.swift */,
+				B741B6D22B01E06F00418EDA /* DefaultRemoteAPIResponseHandler.swift */,
+			);
+			path = ApiManager;
+			sourceTree = "<group>";
+		};
+		B741B6D62B01E0A300418EDA /* DataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B741B6D72B01E0AE00418EDA /* ParameterEncoding.swift */,
+				B741B6D42B01E08800418EDA /* Data+Decode.swift */,
+				B741B6D92B01E0C600418EDA /* URLParameterEncoder.swift */,
+				B741B6DB2B01E0D900418EDA /* JSONParameterEncoder.swift */,
+			);
+			path = DataHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +318,6 @@
 			files = (
 				B741B6792B01553800418EDA /* LaunchScreen.storyboard in Resources */,
 				B741B6762B01553800418EDA /* Assets.xcassets in Resources */,
-				B741B6742B01553700418EDA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +343,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B741B6712B01553700418EDA /* ViewController.swift in Sources */,
+				B741B6C62B01DF7400418EDA /* APIRouter.swift in Sources */,
+				B741B6C02B01DF2600418EDA /* NetworkHeader.swift in Sources */,
 				B741B66D2B01553700418EDA /* AppDelegate.swift in Sources */,
+				B741B6D32B01E06F00418EDA /* DefaultRemoteAPIResponseHandler.swift in Sources */,
+				B741B6D52B01E08800418EDA /* Data+Decode.swift in Sources */,
+				B741B6C22B01DF4400418EDA /* NetworkRouter.swift in Sources */,
+				B741B6D82B01E0AE00418EDA /* ParameterEncoding.swift in Sources */,
+				B741B6DA2B01E0C600418EDA /* URLParameterEncoder.swift in Sources */,
+				B741B6C42B01DF6100418EDA /* HTTPTask.swift in Sources */,
+				B741B6CD2B01E01700418EDA /* WeatherApiHandler.swift in Sources */,
 				B741B66F2B01553700418EDA /* SceneDelegate.swift in Sources */,
+				B741B6B72B01D4EE00418EDA /* HTTPMethod.swift in Sources */,
+				B741B6CB2B01DFF000418EDA /* WeatherEndpoint.swift in Sources */,
+				B741B6D12B01E05600418EDA /* URLRequestError.swift in Sources */,
+				B741B6CF2B01E03500418EDA /* RemoteAPIResponseHandler.swift in Sources */,
+				B741B6C82B01DFA200418EDA /* EndPointType.swift in Sources */,
+				B741B6BE2B01D7AB00418EDA /* Constants.swift in Sources */,
+				B741B6DC2B01E0D900418EDA /* JSONParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +397,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B741B6722B01553700418EDA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B741B6732B01553700418EDA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B741B6772B01553800418EDA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -449,6 +541,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -476,6 +569,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
