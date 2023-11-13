@@ -9,7 +9,7 @@ import Combine
 import UIKit
 
 protocol WeatherRemoteAPI: AnyObject {
-    func getWeather(for query: String) -> AnyPublisher<String, Error>
+    func getWeather(for query: String) -> AnyPublisher<WeatherResponse, Error>
 }
 
 final class WeatherFetcher: WeatherRemoteAPI {
@@ -21,7 +21,7 @@ final class WeatherFetcher: WeatherRemoteAPI {
         self.responseHandler = DefaultRemoteAPIResponseHandler()
     }
 
-    func getWeather(for query: String) -> AnyPublisher<String, Error> {
+    func getWeather(for query: String) -> AnyPublisher<WeatherResponse, Error> {
         requestPublisher(.getWeather(query: query), responseHandler: responseHandler)
     }
 
