@@ -54,6 +54,9 @@
 		B741B71F2B024A2200418EDA /* ForecastListPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B71E2B024A2200418EDA /* ForecastListPresenterTest.swift */; };
 		B741B7212B024B5D00418EDA /* WeatherFetcherSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B7202B024B5D00418EDA /* WeatherFetcherSpy.swift */; };
 		B741B7242B02A10500418EDA /* mockResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B741B7232B02A10500418EDA /* mockResponse.json */; };
+		B741B7262B02A49100418EDA /* ForecastListInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B7252B02A49100418EDA /* ForecastListInteractorTest.swift */; };
+		B741B7282B02A86500418EDA /* ForecastListDataProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B741B7272B02A86500418EDA /* ForecastListDataProviderTest.swift */; };
+		B741B72A2B02AC4B00418EDA /* MockWeatherErrorResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = B741B7292B02AC4B00418EDA /* MockWeatherErrorResponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		B741B71E2B024A2200418EDA /* ForecastListPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListPresenterTest.swift; sourceTree = "<group>"; };
 		B741B7202B024B5D00418EDA /* WeatherFetcherSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFetcherSpy.swift; sourceTree = "<group>"; };
 		B741B7232B02A10500418EDA /* mockResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mockResponse.json; sourceTree = "<group>"; };
+		B741B7252B02A49100418EDA /* ForecastListInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListInteractorTest.swift; sourceTree = "<group>"; };
+		B741B7272B02A86500418EDA /* ForecastListDataProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListDataProviderTest.swift; sourceTree = "<group>"; };
+		B741B7292B02AC4B00418EDA /* MockWeatherErrorResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockWeatherErrorResponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,7 +377,9 @@
 			isa = PBXGroup;
 			children = (
 				B741B71C2B02490B00418EDA /* ForecastListViewSpy.swift */,
+				B741B7272B02A86500418EDA /* ForecastListDataProviderTest.swift */,
 				B741B71E2B024A2200418EDA /* ForecastListPresenterTest.swift */,
+				B741B7252B02A49100418EDA /* ForecastListInteractorTest.swift */,
 			);
 			path = ForecastListTest;
 			sourceTree = "<group>";
@@ -381,6 +389,7 @@
 			children = (
 				B741B7202B024B5D00418EDA /* WeatherFetcherSpy.swift */,
 				B741B7232B02A10500418EDA /* mockResponse.json */,
+				B741B7292B02AC4B00418EDA /* MockWeatherErrorResponse.json */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -499,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B741B7242B02A10500418EDA /* mockResponse.json in Resources */,
+				B741B72A2B02AC4B00418EDA /* MockWeatherErrorResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +571,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B741B7262B02A49100418EDA /* ForecastListInteractorTest.swift in Sources */,
 				B741B71D2B02490B00418EDA /* ForecastListViewSpy.swift in Sources */,
+				B741B7282B02A86500418EDA /* ForecastListDataProviderTest.swift in Sources */,
 				B741B6842B01553900418EDA /* WeatherAppTests.swift in Sources */,
 				B741B71F2B024A2200418EDA /* ForecastListPresenterTest.swift in Sources */,
 				B741B7212B024B5D00418EDA /* WeatherFetcherSpy.swift in Sources */,
@@ -656,7 +668,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -713,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -734,8 +746,7 @@
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -761,8 +772,7 @@
 				INFOPLIST_FILE = WeatherApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -785,7 +795,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WeatherAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -804,7 +814,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.WeatherAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

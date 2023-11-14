@@ -1,0 +1,36 @@
+{
+    "location": {
+        "name": "New Delhi",
+        "region": "Delhi",
+        "country": "India",
+        "localtimeEpoch": 1674297012,
+        "localtime": "2023-01-21 16:00"
+    },
+    "current": {
+        "tempC": 21.0,
+        "tempF": 69.8,
+        "isDay": 1,
+        "condition": {
+            "text": "Overcast",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+            "code": 1009
+        }
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "date": "2023-01-21",
+                "dateEpoch": 1674259200,
+                "day": {
+                    "maxtempC": 24.9,
+                    "mintempC": 11.4,
+                    "condition": {
+                        "text": "Sunny",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+                        "code": 1000
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -39,6 +39,10 @@ extension ForecastListPresenter: ForecastListInteractorToPresenterProtocol {
             self.view?.displayAlert(alert)
             return
         }
+        if let error = response.error {
+            let alert = AlertModel(message: error.message, actionTitle: StringConstants.OK)
+            self.view?.displayAlert(alert)
+        }
         dataSource.saveWeatherResponseInLocal(response: response)
         self.view?.refreshList()
     }

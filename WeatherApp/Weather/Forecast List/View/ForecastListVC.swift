@@ -160,6 +160,7 @@ extension ForecastListVC {
         
         let imageView = UIImageView(image: UIImage(named: "empty_state"))
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.tintColor = .white
         emptyStateView.addSubview(imageView)
         
         let titleLabel = UILabel()

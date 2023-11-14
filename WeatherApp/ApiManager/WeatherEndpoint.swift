@@ -32,7 +32,7 @@ enum WeatherEndpoint: EndPointType {
             let urlParams = [
                 "key": APIConstants.weatherAPIKey,
                 "q": query,
-                "days": "14",
+                "days": "7",
                 "aqi": "no",
                 "alerts": "no"
             ]
